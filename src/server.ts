@@ -1,7 +1,7 @@
 import 'dotenv/config'
 import express from 'express'
 import mongoose from 'mongoose'
-import { UserController } from './controllers/user-controller'
+import { UserController } from '@controllers/user-controller'
 
 const PORT = process.env.PORT || 3000
 const app = express()

@@ -2,7 +2,7 @@
     "compilerOptions": {
       "baseUrl": "src",
       "target": "esnext",
-      "module": "commonjs",
+      "module": "Node16",
       "strict": false,
       "noImplicitAny": true,
       "resolveJsonModule": true,
