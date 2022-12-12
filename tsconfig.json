@@ -12,6 +12,11 @@
       "rootDir": "src",
       "types": ["node"],
       "paths": {
+        "@config/*": ["./config/*"],
+        "@services/*": ["./services/*"],
+        "@errors/*": ["./errors/*"],
+        "@entities/*": ["./entities/*"],
+        "@helpers/*": ["./helpers/*"],
         "@models/*": ["./models/*"],
         "@controllers/*": ["./controllers/*"],
         "@util/*": ["./util/*"]

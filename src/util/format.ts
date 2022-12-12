@@ -1,8 +1,7 @@
-export const format = (entity: any) => {
-  const { _id, username, email } = entity
+export const formatImage = (entity: any) => {
+  const { _id, url } = entity
   return {
     id: _id,
-    username,
-    email,
+    url,
   }
 }
