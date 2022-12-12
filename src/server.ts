@@ -5,7 +5,6 @@ import cors from 'cors'
 import { routes } from 'routes'
 
 const PORT = process.env.PORT || 3000
-const isProductionEnvironment = process.env.NODE_ENV === 'production'
 const MONGO_URI = process.env.MONGO_URI as string
 
 const app = express()
@@ -14,8 +13,6 @@ app.use(cors())
 app.use(routes)
 mongoose.connect(MONGO_URI)
 
-const callback = () => {
+app.listen(PORT, () => {
   console.log(`The server is running on http://localhost:${PORT}`)
-}
-
-app.listen(PORT, !isProductionEnvironment && callback)
+})
